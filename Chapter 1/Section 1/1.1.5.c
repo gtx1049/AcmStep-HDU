@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 //HDU1093
 
 //Input
