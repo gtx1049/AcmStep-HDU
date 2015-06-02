@@ -3,6 +3,18 @@
 #include <math.h>
 #include <memory.h>
 
+//Input
+//The input file contains several test cases. Each test case is made up of two integer numbers: m and n. It is terminated by m = n = 0. Otherwise, m, n <=100.
+//
+//
+//Output
+//For each test case, first print the test number (counting from 1) in one line, then output the number of different ways in another line.
+
+//卡特林数的拓展形式：m个人进栈，n个人出栈（相当于m个1，n个0排列，从左向右数1的个数大于0的个数）
+//其通式为 C(m + n, m) - C(m + n, m + 1) 或 C(m + n, m) - C(m + n, n - 1)
+//即所有方式减去不合法方式，不合法方式与 n + 1个出栈，m - 1个入栈是等价的
+//此题还需乘以全排列数量
+
 void bigMuti(char* op, int sum)
 {
     int len;

@@ -1,6 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//The input file will contain one or more test cases.
+//Each test case consists of one line containing two
+//squares separated by one space. A square is a string
+// consisting of a letter (a-h) representing the column
+//  and a digit (1-8) representing the row on the chessboard.
+//
+//Output
+//For each test case, print one line saying "To get
+//from xx to yy takes n knight moves.".
+
+//搜到就break，第一回广搜到的肯定是线路最短的.
+
 typedef struct point
 {
     int x;

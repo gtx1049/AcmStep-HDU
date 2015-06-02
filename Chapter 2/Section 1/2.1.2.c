@@ -1,5 +1,15 @@
 #include<stdio.h>
 #include<math.h>
+
+//Input
+//There are a lot of cases. In each case, there is an integer N representing the number of integers to find. Each integer won’t exceed 32-bit signed integer, and each of them won’t be less than 2.
+//
+//
+//Output
+//
+//For each case, print the number of prime numbers you have found out.
+//求素数的暴力算法
+
 int isPrime(int num)
 {
     int i;

@@ -2,6 +2,23 @@
 #include <stdlib.h>
 #include <math.h>
 #include <memory.h>
+
+//Input
+//The input will consist of several input cases, one per line. Each input case will be specified by the number n ( 1 ≤ n ≤ 100 ) of different elements that must be used to form the trees. A number 0 will mark the end of input and is not to be processed.
+//
+//
+//Output
+//For each input case print the number of binary trees that can be built using the n elements, followed by a newline character.
+
+//还是卡特兰数构建二叉树，加上了全排列
+//大数算法总结：
+//1.取长度
+//2.逆序将数字放在一个int数组里
+//3.重要的advance开始为0， 乘法，除法，加法
+//  加法： 结果位 = advance + 同位两数，advance = 结果位 / 10，结果位 = 结果位 % 10
+//  乘法： 结果位 = advance + 位 × 乘数， advance = 结果位 / 10， 结果位 = 结果位 % 10
+//  除法： 结果位 = (advance × 10 + 此位)， advance = 结果位 % 10， 结果位 = 结果位 / 10
+
 void bigMuti(char* op, int sum)
 {
     int len;

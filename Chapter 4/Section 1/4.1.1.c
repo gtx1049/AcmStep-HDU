@@ -1,6 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+
+//Input
+//The first line of the input contains an integer T(1<=T<=100) which means the number
+// of test cases. Then T lines follow, each line has a real number Y (fabs(Y) <= 1e10);
+//
+//
+//Output
+//For each test case, you should just output one real number(accurate up to 4
+//decimal places),which is the solution of the equation,or “No solution!”,if there
+//is no solution for the equation between 0 and 100.
+
+//二分法解方程问题，每次取二分处与结果比较
+
 double getFun(double x)
 {
     return 8 * pow(x, 4) + 7 * pow(x, 3) + 2 * pow(x, 2) + 3 * x + 6;

@@ -1,6 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//The input consists of several test cases.,Each test case contains two lines.
+//The first line contains three integers N ,A,B( 1 <= N,A,B <= 200) which describe
+//above,The second line consist N integers k1,k2,....kn.
+//A single 0 indicate the end of the input.
+//
+//
+//Output
+//For each case of the input output a interger, the least times you have to
+//press the button when you on floor A,and you want to go to floor B.If you
+// can't reach floor B,printf "-1".
+
+//广度搜索，只有两个方向，需要注意的只有求最小路径的比较（有点类似于动态规划）
+
 int queue[200];
 int front;
 int rear;

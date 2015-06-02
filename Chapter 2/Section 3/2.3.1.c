@@ -1,6 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Sample Input
+//2
+//1 2
+//112233445566778899 998877665544332211
+//
+//
+//Sample Output
+//Case 1:
+//1 + 2 = 3
+//
+//Case 2:
+//112233445566778899 + 998877665544332211 = 1111111111111111110
+
+//之前在TJOJ写的，略麻烦，但是很规整
+
 char* addTwoInt(char* num1, char* num2)
 {
 	char* result;

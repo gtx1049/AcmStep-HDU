@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <math.h>
 #include <memory.h>
+
+//Input
+//Each line of the input file will be a single positive number n, except the last line, which is a number -1. You may assume that 1 <= n <= 100.
+//
+//
+//Output
+//For each n, print in a single line the number of ways to connect the 2n numbers into pairs.
+
+//连线方法，依然是卡特兰数典型问题
+
 void bigMuti(char* op, int sum)
 {
     int len;

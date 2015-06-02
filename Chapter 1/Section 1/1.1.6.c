@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-//HDU1094
-
 //Input
 //Input contains multiple test cases, and one case one line. Each case starts with an integer N, and then N integers follow in the same line. 
 //

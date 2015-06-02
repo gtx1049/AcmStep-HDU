@@ -1,6 +1,28 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+
+//Input
+//The input consists of several testcases. The first line of each testcase contains
+// two integer numbers N and K, separated by a space. N (1 ≤ N ≤ 10000) is the number
+//of cables in the stock, and K (1 ≤ K ≤ 10000) is the number of requested pieces.
+//The first line is followed by N lines with one number per line, that specify the
+//length of each cable in the stock in meters. All cables are at least 1 centimeter
+//and at most 100 kilometers in length. All lengths in the input are written with
+//a centimeter precision, with exactly two digits after a decimal point.
+//The input is ended by line containing two 0's.
+//
+//
+//Output
+//For each testcase write to the output the maximal length (in meters) of the pieces
+//that Cable Master may cut from the cables in the stock to get the requested number
+//of pieces. The number must be written with a centimeter precision, with exactly
+// two digits after a decimal point.
+//If it is not possible to cut the requested number of pieces each one being at
+//least one centimeter long, then the output must contain the single number "0.00" (without quotes).
+
+//同分饼一题
+
 double cable[10000];
 
 int check(double one, int N, int K)

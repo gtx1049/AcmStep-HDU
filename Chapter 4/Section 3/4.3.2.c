@@ -1,6 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//n (0 < n < 20).
+//
+//Output
+//The output format is shown as sample below. Each row
+//represents a series of circle numbers in the ring
+//beginning from 1 clockwisely and anticlockwisely.
+//The order of numbers must satisfy the above requirements.
+// Print solutions in lexicographical order.
+//You are to write a program that completes above process.
+//Print a blank line after each case.
+
+//深度搜索，到达状态输出即可，中间状态需判断以达到剪枝目的
+
 int N;
 int order[21];
 int mark[21];

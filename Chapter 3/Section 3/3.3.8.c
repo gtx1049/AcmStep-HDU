@@ -1,6 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//测试输入包含若干测试用例。每个测试用例的第1行包含两个正数 Q 和 N，其中 Q
+//是给定的报销额度，N（<=30）是发票张数。随后是 N 行输入，每行的格式为：
+//m Type_1:price_1 Type_2:price_2 ... Type_m:price_m
+//其中正整数 m 是这张发票上所开物品的件数，Type_i 和 price_i 是第 i 项物品
+//的种类和价值。物品种类用一个大写英文字母表示。当N为0时，全部输入结束，相应的结果不要输出。
+//
+//
+//Output
+//对每个测试用例输出1行，即可以报销的最大数额，精确到小数点后2位。
+
 typedef struct invice
 {
     double A;

@@ -1,3 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<memory.h>
+
+//Input
+//三个整数 : S 可乐的体积 , N 和 M是两个杯子的容量，以"0 0 0"结束。
+//
+//Output
+//如果能平分的话请输出最少要倒的次数，否则输出"NO"。
+
+//暴力搜索，以可乐的状态抽象为为搜索路径图
+//共有6种伸展方向
+//出现过的状态不可能会去
+
 typedef struct statu
 {
     int bottle;

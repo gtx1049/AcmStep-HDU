@@ -1,6 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//Input
+//There are multiple cases in this problem and ended by the EOF. In each case, there is only one integer n means the number of children (1<=n<=1000)
+//
+//
+//Output
+//For each test case, there is only one integer means the number of queue satisfied the headmaster’s needs.
+
+//相当于上一次加了一个男孩，再看加女孩的情况，可以等价于在n - 2的情况下加2个女孩FF，而n - 2的情况不不充足，还需要
+//n - 2情况下不满足条件的序列，即末尾不可能是MF，那么 n - 4 的情况可以满足 MF的情况
+//所以 F(n) = F(n - 1) + F(n - 2) + F(n - 4)
+
 void addFun(int* ret, int* num1, int* num2, int* num3)
 {
     int i;

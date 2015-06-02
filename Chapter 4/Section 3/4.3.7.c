@@ -2,6 +2,24 @@
 #include<stdlib.h>
 #include<memory.h>
 #include<string.h>
+
+//Input
+//The input contains multiple test cases.
+//First part a integer n1 expressing the numbers of primary equipments you can buy in the shop.
+//Next n1 lines, each line form as S V,S is the name of equipment and V meaning you should cost V money to buy one equipments S.
+//Second part a integer n2 expressing the numbers of kinds equipments you have.
+//Next n2 lines, each line form as S,M, meaning the numbers of equipment S you have is M.
+//Third part a integer n3 expressing the numbers of formulas.
+//Next n3 lines, each line have a character '=', The left is the equipments you should use to get the right equipment. For example A + B + C = D, In order to get a D, you must use A,B,C,D.each one.
+//Last part a integer n4, expressing n4 kinds of equipments you need.
+//Than n4 lines, each line form as S,M. Meaning the numbers of equipment S you need is M.
+
+//You may sure the total kinds of equipment will not larger than 100. And the lengths of equipment name will less than 50.(a chinese words made up of two character )
+ 
+
+//Output
+//Output the extra money you need to achieve goal.
+
 typedef struct chain
 {
     int id;

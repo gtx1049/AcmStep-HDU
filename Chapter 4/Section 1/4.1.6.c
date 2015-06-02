@@ -1,6 +1,24 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+
+//Input
+//The first line is the case number T.
+//For each case, there are three lines.
+//The first line, four integers, the coordinates of A and B: Ax Ay Bx By.
+//The second line , four integers, the coordinates of C and D:Cx Cy Dx Dy.
+//The third line, three integers, P Q R.
+//0<= Ax，Ay，Bx，By，Cx，Cy，Dx，Dy<=1000
+//1<=P，Q，R<=10
+//
+//
+//Output
+//The minimum time to travel from A to D, round to two decimals.
+
+//凸函数可以用三分法逼近极值（二分，后二段再二分）
+//注意，将二段求解写成函数形式，以方便嵌套求值
+//注意mid，midmid的影响顺序
+
 typedef struct point
 {
     double x;

@@ -2,6 +2,15 @@
 #include<stdlib.h>
 #include<memory.h>
 #include<string.h>
+
+//Input
+//The first line contains a single integer T(1≤T≤10),the number of test cases. Each test case is a single line containing 8 integers 0~8,the numbers in circle A~H.0 indicates an empty circle.
+
+ 
+
+//Output
+//For each test case ,print the case number and the solution in the same format as the input . if there is no solution ,print “No answer”.If there more than one solution,print “Not unique”.
+
 int map[8][8] = {{0, 1, 1, 1, 0, 0, 0, 0},
                  {1, 0, 1, 0, 1, 1, 0, 0},
                  {1, 1, 0, 1, 1, 1, 1, 0},

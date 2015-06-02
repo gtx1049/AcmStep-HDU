@@ -1,6 +1,22 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//The input consists of multiple data sets. A data set starts with a line
+//containing two positive integers W and H; W and H are the numbers of
+//tiles in the x- and y- directions, respectively. W and H are not more than 20.
+//There are H more lines in the data set, each of which includes W
+//characters. Each character represents the color of a tile as follows.
+//'.' - a black tile
+//'#' - a red tile
+//'@' - a man on a black tile(appears exactly once in a data set)
+//
+//
+//Output
+//For each data set, your program should output a line which contains
+//the number of tiles he can reach from the initial tile (including itself).
+
 char map[20][20];
 int mark[20][20];
 int offsetx[4] = {0, 0, -1, 1};

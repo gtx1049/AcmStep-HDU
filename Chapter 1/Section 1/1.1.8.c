@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-//HDU1096
-
 //Input
 //Input contains an integer N in the first line, and then N lines follow. Each line starts with a integer M, and then M integers follow in the same line. 
 //

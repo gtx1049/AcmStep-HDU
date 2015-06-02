@@ -1,6 +1,23 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//There are multiple cases. Each case contains three integers N,
+// K and M (-1000 <= N <= 1000, 1 < K <= 1000, 0 < M <= 1000) in a single line.
+//The input is terminated with three 0s. This test case is not to be processed.
+//
+//Output
+// final value of N) % K”. The second line print the operations to do
+// in each step, which consist of ‘+’, ‘-‘, ‘*’ and ‘%’. If there
+// are more than one solution, print the minimum one. (Here we define
+//‘+’ < ‘-‘ < ‘*’ < ‘%’. And if A = a1a2...ak and B = b1b2...bk are
+//both solutions, we say A < B, if and only if there exists a P such
+//that for i = 1, ..., P-1, ai = bi, and for i = P, ai < bi)
+
+//必须将current n控制在一定范围内
+//此题无能为力，真的不懂啊
+
 #define MAX 1005
 typedef struct Point
 {

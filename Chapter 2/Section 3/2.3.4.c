@@ -2,6 +2,18 @@
 #include <stdlib.h>
 #include <math.h>
 #include <memory.h>
+
+//Input
+//The input will contain a number 1 <= i <= 100 per line representing the number of elements of the set.
+//
+//
+//Output
+//You have to print a line in the output for each entry with the answer to the previous question.
+
+//二叉树组合个数与节点的关系构成卡特兰数
+//其一种通项公式为 『h(n)=C(2n,n)/(n+1) (n=1,2,3,...)』
+//因为数值过大，需要大数乘除法
+
 void bigMuti(char* op, int sum)
 {
     int len;

@@ -1,5 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+//Input
+//The input file will contain one or more test cases. The first line of each test case contains an integer n,
+//representing the number of different blocks in the following data set. The maximum value for n is 30.
+//Each of the next n lines contains three integers representing the values xi, yi and zi.
+//Input is terminated by a value of zero (0) for n.
+//
+//
+//Output
+//For each test case, print one line containing the case number
+//(they are numbered sequentially starting from 1) and the height of the
+// tallest possible tower in the format "Case case: maximum height = height".
+
+//一种方块只有3种形态，首先列出这些形态并排序，再找出最大子序列即可
+
 typedef struct box
 {
     int x;

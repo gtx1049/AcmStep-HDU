@@ -2,6 +2,17 @@
 #include <stdlib.h>
 #include <math.h>
 #include <memory.h>
+
+//Input
+//每次输入一个数n(1<=n<=35)，当n等于－1时结束输入。
+//
+//
+//Output
+//对于每个输入数据输出路径数，具体格式看Sample。
+
+//依然卡特兰数，走棋盘对角线可触碰，棋盘两半分上下
+//卡特兰数典型问题：1.买票 2.出入栈 3.二叉树 4.多边形、圆连线 4.走棋盘不过对角线
+
 void bigMuti(char* op, int sum)
 {
     int len;

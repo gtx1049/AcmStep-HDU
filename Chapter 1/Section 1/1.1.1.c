@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-//HDU1089
-
 //Input
 //The input will consist of a series of pairs of integers a and b, separated by a space, one pair of integers per line. 
 //

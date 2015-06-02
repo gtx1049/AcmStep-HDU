@@ -1,6 +1,32 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//First line contains two integers stand for N and M.
+//Then N lines follows, every line has M characters. "."
+//stands for road, "a" stands for Angel, and "r" stands for each of Angel's friend.
+//Process to the end of the file.
+//
+//
+//
+//Output
+//For each test case, your program should output a single
+//integer, standing for the minimal time needed. If such a
+// number does no exist, you should output a line containing
+// "Poor ANGEL has to stay in the prison all his life."
+
+//利用队列的BFS搜索框架：
+//while(队列不为空)
+//{
+//  取出队列头
+//  检查是否符合状态，符合退出
+//  不符合将所有依赖点加入队列
+//}
+//此题用a接近r搜索
+//用一张图记录扩张情况，即路线情况
+//因为需要求最小路径，对于已搜情况，比原来小才会更改，最后获得路程
+
 typedef struct Node
 {
     int x;

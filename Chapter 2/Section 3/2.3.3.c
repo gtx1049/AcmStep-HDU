@@ -3,6 +3,17 @@
 #include <math.h>
 #include <memory.h>
 
+//Input
+//Each line will contain an integers. Process to end of file.
+//
+//
+//Output
+//For each case, output the result in a line.
+
+//四个一组的菲波那锲数列，关键就是大数计算
+//1 1 1 1 -> 4 1 1 1 -> 7 4 1 1 -> 13 7 1 1
+//后移，取第一个
+
 char ret[1001];
 char* bigIntfour(int n)
 {

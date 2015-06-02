@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-//HDU1092
-
 //Input
 //Input contains multiple test cases. Each test case contains a integer N, and then N integers follow in the same line. A test case starting with 0 terminates the input and this test case is not to be processed.
 //

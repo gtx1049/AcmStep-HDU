@@ -1,6 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+
+//Input
+//The first line of the input contains an integer T(1<=T<=100) which means
+//the number of test cases. Then T lines follow, each line has only one
+// real numbers Y.(0 < Y <1e10)
+//
+//Output
+//Just the minimum value (accurate up to 4 decimal places),when x is between 0 and 100.
+
+//求最小值，需要用到导数的知识，同时用二分法求得导数取0的近似值
+
 double originalFun(double x, double y)
 {
     return 6 * pow(x, 7) + 8 * pow(x, 6) + 7 * pow(x, 3) + 5 * pow(x, 2) - y * x;

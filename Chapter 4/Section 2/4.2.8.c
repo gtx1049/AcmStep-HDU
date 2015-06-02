@@ -1,6 +1,23 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<memory.h>
+
+//Input
+//The input contains multiple test cases.
+//Each test case include, first two integers n, m. (2<=n,m<=200).
+//Next n lines, each line included m character.
+//‘Y’ express yifenfei initial position.
+//‘M’    express Merceki initial position.
+//‘#’ forbid road;
+//‘.’ Road.
+//‘@’ KCF
+//
+//
+//Output
+//For each test case output the minimum total time that
+//both yifenfei and Merceki to arrival one of KFC.You may
+// sure there is always have a KFC that can let them meet.
+
 typedef struct POINT
 {
     int x;
